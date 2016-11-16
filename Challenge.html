@@ -6,10 +6,14 @@
   <body>
     <svg id="main-canvas" width="100%" height="95%" viewBox="0 0 800 375" style="background: lightcyan;">
       <image id="character" x="200" y="200" width="50" height="100" xlink:href="Images/Penguin.gif"/>
-      <image id="character" x="200" y="200" width="50" height="100" xlink:href="Images/Penguin.gif">
-        <animate id="fish1" attributeName/>
+      <image id="redFish" x="100" y="100" width="40" height="80" xlink:href="Images/Fish.gif">
+        <animate id="fish1" attributeName="y" from="100" to="300" dur="5s" begin="0s; fish2.end"/>
+        <animate id="fish2" attributeName="y" from="300" to="100" dur="5s" begin="fish1.end"/>
       </image>
-      <image id="character" x="200" y="200" width="50" height="100" xlink:href="Images/Penguin.gif"></image>
+      <image id="blueFish" x="200" y="200" width="40" height="80" xlink:href="Images/Fish.gif">
+        <animate id="fish3" attributeName="y" from="100" to="300" dur="5s" begin="0s; fish4.end"/>
+        <animate id="fish4" attributeName="y" from="300" to="100" dur="5s" begin="fish3.end"/>
+      </image>
     </svg>
     <script src="Challenge.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
