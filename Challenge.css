@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans');
+@font-face {
+    font-family: PacMan;
+    src: url('PacMan.TTF');
+}
+#gameOverText {
+    text-align: center;
+    font-family: PacMan;
+    font-size: 60px;
+}
+body {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}

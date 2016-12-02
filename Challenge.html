@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <div id="score">
-    </div>
-    <svg id="main-canvas" width="100%" height="95%" viewBox="0 0 800 340" style="background: lightcyan;">
-      <image id="character" x="200" y="200" width="50" height="100" xlink:href="Images/Penguin.gif"/>
-      <image id="redFish" x="100" y="100" width="40" height="80" xlink:href="Images/redFish.gif">
-        <animate id="fish1" attributeName="y" from="100" to="300" dur="5s" begin="0s; fish2.end"/>
-        <animate id="fish2" attributeName="y" from="300" to="100" dur="5s" begin="fish1.end"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="Challenge.css">
+</head>
+
+<body>
+
+    <svg id="main-canvas" width="100%" height="99.62%" style="background: lightcyan;">
+      <image id="character" x="200" y="200" width="100" height="200" xlink:href="Images/Penguin.gif"/>
+
+      <image id="redFish" x="" y="100" width="80" height="160" xlink:href="Images/redFish.gif">
+        <animate id="fish1" attributeName="y" from="100" to="300" dur="2s" begin="0s; fish2.end"/>
+        <animate id="fish2" attributeName="y" from="300" to="100" dur="2s" begin="fish1.end"/>
       </image>
-      <image id="blueFish" x="200" y="200" width="40" height="80" xlink:href="Images/blueFish.gif">
-        <animate id="fish3" attributeName="y" from="100" to="300" dur="5s" begin="0s; fish4.end"/>
-        <animate id="fish4" attributeName="y" from="300" to="100" dur="5s" begin="fish3.end"/>
+
+      <image id="blueFish" x="" y="100" width="80" height="160" xlink:href="Images/blueFish.gif">
+        <animate id="fish3" attributeName="y" from="100" to="300" dur="2s" begin="0s; fish4.end"/>
+        <animate id="fish4" attributeName="y" from="300" to="100" dur="2s" begin="fish3.end"/>
       </image>
-      <rect id="gameOver" x="0" y="0" height="340" width="800" opacity="0" fill="purple"></rect>
+
+      <image id="shark" x="" y="" width="80" height="160" xlink:href="Images/Shark.gif"/>
+
+      <rect id="gameOver" x="0" y="0" height="100%" width="100%" opacity="0" fill="white"></rect>
+
+      <text id="score" x="5" y="20"/>
+
+      <text id="gameOverText" x="-100000" y="-100000">
+        game over!
+      </text>
     </svg>
     <script src="Challenge.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  </body>
+</body>
+
 </html>
