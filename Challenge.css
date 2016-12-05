@@ -3,7 +3,7 @@
     font-family: PacMan;
     src: url('PacMan.TTF');
 }
-#gameOverText {
+#gameOverText, #winText {
     text-align: center;
     font-family: PacMan;
     font-size: 60px;
